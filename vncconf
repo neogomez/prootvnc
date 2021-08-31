@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#######
+#color#
+#######
+
+R='\033[1;32m'
+G='\033[0;33m'
+EDC='\033[0m'
+
+FILE=/tmp/.X1-lock
+If [ -f "$FILE" ]; then
+    echo -e "${R}Clearing..."
+    sleep 5
+    pkill -/*
+else
+    echo "Ok"
+fi
